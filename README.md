@@ -1,5 +1,7 @@
 ![image](https://user-images.githubusercontent.com/116558787/197547402-7aea89ce-1cf8-4156-830a-a0a822622aa3.png)
 # RETO 1: Identificación de Eventos
+![image](https://user-images.githubusercontent.com/116558787/197640277-0f6defa8-3c84-47ec-bb77-9c935108914b.png)
+ - Se alcanzaron niveles de validacion de test del f1 micro de 0.15. En este caso manteniendo la misma proporcion de clases que los datos de entrenamiento
 ## GRUPO_70: Ramón Sieira Martínez (SDG Group) José Divasón (Universidad de La Rioja) Francisco Javier Martínez de Pisón (Universidad de La Rioja)
  - Inicialmente nos encontramos con el problema de analizar la base de datos y entender un poco perdimos bastante tiempo en entender un poco como como eran las señales.
  - Nos dimos cuenta de que las señales tenía un un ruido un ruido de fondo y era difícil identificar los eventos después de eso.
