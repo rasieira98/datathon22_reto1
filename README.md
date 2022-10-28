@@ -9,7 +9,7 @@
  - Nuestra idea consistió en incorporar dos modelos dentro del modelo SED: dos modelos de capas de convolución basados en las redes Efficientnet-ns. El mejor modelo final utilizaba una Efficientnet-B6_ns. Se incorporaron dos redes Efficientnet dentro del propio modelo SED, una aprendia de la FFT y la otra del CQT. Posteriormente, se utilizaba dos capas de atención, una para cada modelo.
  - La combinación de los dos modelos se realizó a partir del valor máximo para cada tramo, es decir, para cada "frame" del audio. Por lo tanto, elegimos la probabilidad máxima que nos da para cada uno de los dos modelos interno.
  - El entrenamiento se realizó con un 80% de los audios, un 10% para validar y el otro 10% para la base de datos de Testeo.
- - La inferencia fué otro problema dificil de resolver. Para calcular los thresholds de cada clase, se utlizó la base de datos de testeo.
+ - La inferencia fue otro problema dificil de resolver. Para calcular los thresholds de cada clase, se utlizó la base de datos de testeo.
  - Se alcanzaron niveles de validacion de f1 micro de 0.3010 en el ranking de la competición.
  - USAR el notebook MODELO_SED_DOBLE_BALANCEADO_B6_0.301094
 ### MODELO SED: Basado en modelos CNN pero incluye un transformer que “presta atención” a zonas específicas de la imagen. 
