@@ -9,6 +9,7 @@ De esta forma, la clave es que podemos hacer que el modelo preste atención en d
  - Nuestra idea consiste en incorporar dos modelos dentro del modelo SED: dos modelos de capas de convolución basados en las redes B3 y B0 de EfficientNet. Hemos incorporado los dos modelos dentro del propio modelo SED y luego hemos utilizado dos capas de atención, una para cada modelo. 
  - Finalmente la concatenación es el valor máximo para cada tramo, es decir, para cada "frame" del audio. Por lo tanto, elegimos la probabilidad máxima que nos da cada uno de los dos modelos.
  - Se alcanzaron niveles de validacion de f1 micro de 0.22.
+ - USAR el notebook 0115_MODELO_SIMPLIFICADO_EFFB6_SCORE_0.221195
 ### MODELO SED: Basado en modelos CNN pero incluye un transformer que “presta atención” a zonas específicas de la imagen. 
 ![image](https://user-images.githubusercontent.com/116558787/197606751-7ec89915-7ab4-4647-a93d-aa2e12e74f8b.png)
 
