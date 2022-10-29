@@ -10,7 +10,7 @@
  - El entrenamiento se realizó con un 80% de los audios, un 10% para validar y el otro 10% para la base de datos de Testeo.
  - Cómo conseguir hacer la inferencia fue otro problema dificil de resolver. Para calcular los thresholds de cada clase, se utilizó la base de datos de testeo.
  - Al final, con un modelo SED doble se alcanzó un F1-MICRO de 0.3010 en el ranking de la competición.
- - Para obtener la submission USAR el notebook MODELO_SED_DOBLE_BALANCEADO_B6_0.301094
+ - Para obtener la submission USAR el notebook MODELO_SED_DOBLE_BALANCEADO_B6_0.301094. Para volver a entrenar el modelo, poner la variable ENTRENA a True.
 ### MODELO SED: Basado en modelos CNN pero incluye un transformer que “presta atención” a zonas específicas de la imagen. 
 ![image](https://user-images.githubusercontent.com/116558787/197606751-7ec89915-7ab4-4647-a93d-aa2e12e74f8b.png)
 
