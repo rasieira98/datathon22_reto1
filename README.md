@@ -8,7 +8,7 @@
   - Partiendo de esta idea, lo primero que realizamos fue un análisis con diferentes técnicas de pre-procesado. Estuvimos probando diferentes transformadas y vimos que las dos que más información aportaban eran la FFT y la CQT (que en otras competiciones de Kaggle de audio y trtamiento de señal ha funcionado muy bien). 
  - El preprocesado en el Dataloader fue vital para el éxito de la clasificación. Para el entrenamiento, un 50% de las veces se se seleccionaban los tramos donde estaban los eventos y se escalaban al tamaño de la imagen deseado según el modelo Efficientnet que ibamos a usarr. Si el evento era mayor de tres segundos, se elegia un tramos entre 1 y 3 segundos del mismo. El otro 50% se escogia aleatoriamente entre 1 y 3 segundos. Las etiquetas correspondian a las cuatro clases más la clase ruido. Para la validación, se utilizó una ventana de 2 segundos con paso de 2 segundos de todos los audios.
  - El entrenamiento se realizó con un 80% de los audios, un 10% para validar y el otro 10% para la base de datos de Testeo.
- - Com ohacer la inferencia fue otro problema dificil de resolver. Para calcular los thresholds de cada clase, se utlizó la base de datos de testeo.
+ - Cómo conseguir hacer la inferencia fue otro problema dificil de resolver. Para calcular los thresholds de cada clase, se utilizó la base de datos de testeo.
  - Al final, con un modelo SED doble se alcanzó un F1-MICRO de 0.3010 en el ranking de la competición.
  - Para obtener la submission USAR el notebook MODELO_SED_DOBLE_BALANCEADO_B6_0.301094
 ### MODELO SED: Basado en modelos CNN pero incluye un transformer que “presta atención” a zonas específicas de la imagen. 
